@@ -291,7 +291,7 @@ impl Emulator {
                 }
             }
             (0xE, _, 0xA, 1) => {
-                // Skip if Key Pressed
+                // Skip if Key Not Pressed
                 let register_num = digit2 as usize;
                 let key_num = self.v_registers[register_num] as usize;
 
@@ -398,6 +398,21 @@ impl Emulator {
             }
             self.sound_timer -= 1;
         }
+    }
+
+    pub fn get_display(&self) -> &[bool] {
+        &self.screen
+    }
+
+    pub fn keypressed(&mut self, index: usize, pressed: bool) {
+        self.keys[index] = pressed;
+    }
+
+    pub fn load(&mut self, data: &[u8]) {
+        let start = STARTING_ADDRESS as usize;
+        let end = start + data.len();
+
+        self.ram[start..end].copy_from_slice(data);
     }
 }
 
