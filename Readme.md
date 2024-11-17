@@ -5,7 +5,7 @@
 </div>
 A CHIP-8 emulator implemented in Rust with both native SDL2 and WebAssembly frontends.
 <br/>
-Created following [**An Introduction to Chip-8 Emulation using the Rust Programming Language**](https://github.com/aquova/chip8-book)
+Created following <a href="https://github.com/aquova/chip8-book">An Introduction to Chip-8 Emulation using the Rust Programming Language</a>
 
 ## Features
 
