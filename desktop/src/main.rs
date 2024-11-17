@@ -4,7 +4,7 @@ use sdl2::{
 };
 use std::{env, fs::File, io::Read, time::Duration};
 
-const TICKS_PER_FRAME: usize = 5;
+const TICKS_PER_FRAME: usize = 15;
 const SCALE: u32 = 15;
 const WINDOW_WIDTH: u32 = (SCREEN_WIDTH as u32) * SCALE;
 const WINDOW_HEIGHT: u32 = (SCREEN_HEIGHT as u32) * SCALE;
