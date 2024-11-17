@@ -27,7 +27,7 @@ Created following <a href="https://github.com/aquova/chip8-book">An Introduction
 
 ### Native
 
-Run in `desktop` folder: `cargo run <path_to_rom> color`
+Run in `desktop` folder: `cargo run <path_to_rom> <color>`
 <br/>
 Color options: `red, blue, green, pink`
 
