@@ -19,7 +19,10 @@ Created following <a href="https://github.com/aquova/chip8-book">An Introduction
 ## Prerequisites
 
 - Rust toolchain (cargo, rustc)
-- SDL2 development libraries
+- SDL2 development libraries: 
+    [**Download from here**](https://github.com/libsdl-org/SDL/releases/tag/release-2.30.9)
+    <br/>
+    On MacOS extract and place the extracted folder in `/Library/Frameworks/`
 - wasm-pack
 - python3 (to run a server for the web version)
 
